@@ -1,0 +1,37 @@
+/*
+ * Flash partition layout migrated from Partition Manager
+ * (pm_static_nrf54l15dk_nrf54l15_cpuapp.yml) to devicetree.
+ *
+ * Layout (matches the previous pm_static configuration):
+ *   image-0 (app): 0x0      - 0x145000
+ *   zms-storage:   0x145000 - 0x15D000
+ *   storage:       0x15D000 - 0x165000
+ */
+
+/* Remove the board default partition layout (mcuboot/slot0/slot1/storage). */
+/delete-node/ &boot_partition;
+/delete-node/ &slot0_partition;
+/delete-node/ &slot1_partition;
+/delete-node/ &storage_partition;
+
+&cpuapp_rram {
+	partitions {
+		slot0_partition: partition@0 {
+			compatible = "zephyr,mapped-partition";
+			label = "image-0";
+			reg = <0x0 0x145000>;
+		};
+
+		zms_storage: partition@145000 {
+			compatible = "zephyr,mapped-partition";
+			label = "zms-storage";
+			reg = <0x145000 0x18000>;
+		};
+
+		storage_partition: partition@15d000 {
+			compatible = "zephyr,mapped-partition";
+			label = "storage";
+			reg = <0x15d000 0x8000>;
+		};
+	};
+};

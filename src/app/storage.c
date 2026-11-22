@@ -15,7 +15,7 @@
 #include <sys/types.h>
 #include <zephyr/device.h>
 #include <zephyr/drivers/flash.h>
-#include <zephyr/fs/zms.h>
+#include <zephyr/kvss/zms.h>
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
 #include <zephyr/settings/settings.h>
@@ -30,10 +30,10 @@ K_MUTEX_DEFINE(mutex_storage);
 #define ZMS_PARTITION zms_storage
 
 /** @brief Device for the ZMS partition */
-#define ZMS_PARTITION_DEVICE FIXED_PARTITION_DEVICE(ZMS_PARTITION)
+#define ZMS_PARTITION_DEVICE PARTITION_DEVICE(ZMS_PARTITION)
 
 /** @brief Offset for the ZMS partition */
-#define ZMS_PARTITION_OFFSET FIXED_PARTITION_OFFSET(ZMS_PARTITION)
+#define ZMS_PARTITION_OFFSET PARTITION_OFFSET(ZMS_PARTITION)
 
 /** @brief ZMS filesystem structure */
 static struct zms_fs fs;

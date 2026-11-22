@@ -123,8 +123,8 @@ These qualities come together to create a **happy hacking experience** for every
 
 Before building OpenBlink, set up the following:
 
-- **nRF Connect SDK** v3.3.0 — see the [official installation guide](https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/installation/install_ncs.html)
-- **nRF Connect SDK toolchain** v3.3.0
+- **nRF Connect SDK** v3.4.2 — see the [official installation guide](https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/installation/install_ncs.html)
+- **nRF Connect SDK toolchain** v3.4.2
 - **west** (installed with the nRF Connect SDK)
 - **Ruby** (required for generating mruby/c autogen files)
 
@@ -165,8 +165,8 @@ The following hardware platforms have been tested with OpenBlink:
 
 ## Development Environment Versions
 
-- nRF Connect SDK toolchain v3.3.0
-- nRF Connect SDK v3.3.0
+- nRF Connect SDK toolchain v3.4.2
+- nRF Connect SDK v3.4.2
 
 ## Documentation
 
