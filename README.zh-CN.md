@@ -123,8 +123,8 @@ OpenBlink 非常重视**在真实硬件上进行黑客创造的乐趣**。每一
 
 在构建 OpenBlink 之前，请准备以下开发环境：
 
-- **nRF Connect SDK** v3.3.0 — 请参阅 [官方安装指南](https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/installation/install_ncs.html)
-- **nRF Connect SDK 工具链** v3.3.0
+- **nRF Connect SDK** v3.4.2 — 请参阅 [官方安装指南](https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/installation/install_ncs.html)
+- **nRF Connect SDK 工具链** v3.4.2
 - **west**（随 nRF Connect SDK 一同安装）
 - **Ruby**（生成 mruby/c autogen 文件所需）
 
@@ -165,8 +165,8 @@ $ west flash
 
 ## 开发环境版本
 
-- nRF Connect SDK toolchain v3.3.0
-- nRF Connect SDK v3.3.0
+- nRF Connect SDK toolchain v3.4.2
+- nRF Connect SDK v3.4.2
 
 ## 文档
 
